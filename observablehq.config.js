@@ -84,15 +84,65 @@ export default {
       pages: [
         {
           name: "2.1 Why Stats?",
-          path: "/02-Why-Stats/01-why-stats"},
+          path: "/02-Why-Stats/01-why-stats"
+        },
         {
           name: "2.2 Creating Frequency Distributions",
           path: "/02-Why-Stats/02-freq-dist-create"
         },
+        // {
+        //   name: "2.3 Plotting Frequency Distributions",
+        //   path: "/02-Why-Stats/03-freq-dist-plot--teachers_copy"
+        // },
       ]
     },
+    // HELP PAGES
+    {
+      name: "Help",
+      open: false,
+      pages: [
+        {
+          name: "Terminal Support",
+          path: "/Help/terminal"
+        },
+        {
+          name: "Markdown Support",
+          path: "/Help/markdown"
+        },
+      ]
+    },
+    // CLASS DEMOS
+    {
+      name: "Class Demos",
+      open: false,
+      pages: [
+        {
+          name: "Eyes on the Prize!",
+          path: "/Class-Demos/00-eotp"
+        },
+        // {
+        //   name: "Compromise Demo",
+        //   path: "/Class-Demos/xx-compromise"
+        // },
+      ]
+    },
+    // {
+    //   name: "DEMOS",
+    //   open: false,
+    //   pages: [
+    //     {
+    //       name: "Chp 2 Demos",
+    //       path: "/02-Why-Stats/02--EXAMPLE"
+    //     },
+    //     {
+    //       name: "Compromise Demos",
+    //       path: "/xx-Textual-Analysis/compromise"
+    //     },
+    //   ]
+    // },
   ],
 
   // Content to add to the head of the page, e.g. for a favicon:
   head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">\n<link rel="stylesheet" href="/assets/css/hljs.css">\n<script src="/assets/js/lib/hljs.min.js"></script>\n<script src="/assets/js/lib/hljs-javascript.min.js"></script>\n<script src="/assets/js/lib/hljs-bash.min.js"></script>\n<script src="/assets/js/lib/hljs-shell.min.js"></script>\n<script src="/assets/js/lib/hljs-json.min.js"></script>\n<script>hljs.highlightAll();</script>',
+  footer: '<script src="/assets/js/toggle-section.js"></script>',
 };
