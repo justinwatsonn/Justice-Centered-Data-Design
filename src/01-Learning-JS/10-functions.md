@@ -93,8 +93,8 @@ Overall keep that rule-of-thumb in mind as you practice writing functions.
 Use D3.js `FileAttachment()` method below in VS Code. Remember that you'll need to write a relative path as a String parameter that helps the computer find where the CSV file is in relation to this particular page's file in the project tree.
 
 <!-- Attach sampled NC voter data -->
-```javascript
-// Convert to `js` codeblock and attach sampled NC voter data file: nc_absentee_mail_2024_n20000.csv
+```js
+const ncVoters = FileAttachment("./../data/nc-voters/nc_absentee_mail_2024_n20000.csv").csv({typed: true})
 ```
 
 ## E2. Convert String dates to Date() objects
@@ -103,26 +103,34 @@ Use D3.js `FileAttachment()` method below in VS Code. Remember that you'll need 
 
 First outline your procedure with steps below.
 
-1. Enter step 1
-2. Enter step 2
-3. ...
+1. Define the function that takes parameters
+2. Create a data parser
+3. Use .map() to make a new array
+4. Return the array
 
 Now, code!
 
-```javascript
-// Your function code goes here
+```js
+const convertStringtoDate = (data, date) => {
+  const dateParser = utcParse("%m/%d/%Y")
+  const newData = data.map( d => {
+    d[date] = dateParser(d[date])
+    return d;
+  })
+  return newData;
+}
 ```
 
-```javascript
-// Your use of the function code goes here
+```js
+const ncVotersWithDates = convertStringtoDate(ncVoters, "ballot_rtn_dt_")
 ```
 
 <p class="codeblock-caption">
   E1 Interactive Output
 </p>
 
-```javascript
-// Convert and output variable here
+```js
+ncVotersWithDates
 ```
 
 ## E3. Create Your Own Function (with Conditions)!
@@ -137,20 +145,35 @@ First outline your procedure with steps below.
 
 Now, code!
 
-```javascript
-// Your function code goes here
+```js
+const addPartyName = (data) => {
+  const updatedData = data.map(voter => {
+    if (voter.party_code === "DEM") {
+      voter.party_full_name = "Democrat";
+    } else if (voter.voter_party_code === "REP") {
+      voter.party_full_name = "Republican"
+    } else if (voter.voter_party_code === "UNA") {
+      voter.party_full_name = "Unaffiliated"
+    } else {
+      voter.party_full_name = "Other"
+    }
+
+    return voter
+  })
+  return updatedData
+}
 ```
 
-```javascript
-// Your use of the function code goes here
+```js
+const ncVotersFinal = addPartyName(ncVotersWithDates)
 ```
 
 <p class="codeblock-caption">
   E2 Interactive Output
 </p>
 
-```javascript
-// Your output variable here
+```js
+ncVotersFinal
 ```
 
 ## Submission
