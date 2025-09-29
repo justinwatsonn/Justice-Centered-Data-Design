@@ -1,4 +1,6 @@
-# 2.1-Why Statistics Are Important [to TPC]
+# 2.1-Why Statistics Are Important [to Humanists]
+
+<p style="display:none"></p>
 
 ## Start Your GH Workflow
 
@@ -9,9 +11,9 @@ Remember, before you start anything else, always follow this GH methodological w
 
 ## Overview
 
-The *Statistics for Social Justice* book (S4SJ) is written directly to and for social workers—not TPC. However, throughout this course, I am asking us to translate concerns, issues, situations, and methods that we recognize as potentially overlapping and similar with TPC professionals or even be inspired to invent different and new issues and methods for TPC.
+The *Statistics for Social Justice* book (S4SJ) is written directly to and for social workers—not TPC or other communication design fields. However, throughout this course, I am asking us to translate concerns, issues, situations, and methods that we recognize as potentially overlapping and similar with communication professionals or even be inspired to invent different and new issues and methods for TPC.
 
-The first three readings set us down this inventive path for the future of TPC professionals to take up more data-driven, structural approaches to our work, ***or what could be our work***! Here's a basic rationale and use for each of the readings in the context of this course:
+The first three readings set us down this inventive path for the future of communication professionals to take up more data-driven, structural approaches to our work, ***or what could be our work***! Here's a basic rationale and use for each of the readings in the context of this course:
 
 1. The S4SJ book provides us with the initial structure of concepts and statistical techniques to adapt into our own ***structural perspective*** to carry into and inform TPC.
 2. Lindgren, Gerdes, and Lawrence discuss and define what they call a social justice ethic. They briefly survey the social justice turn in TPC, and its exigence in response to the myriad ways ethics have been conceptualized and operationalized in TPC's past. This book chapter can help us gain a sense for where TPC has been and where it is going with regards to social justice work.
@@ -42,14 +44,14 @@ With these goals for the texts in mind, please respond to the questions herein a
 **Question**: Use the space below to define the provided key terms.
 
 - According to the SFSJ authors, what are the main difference between **data** and **information**?:
-- **Variable**:
-- **Constant**:
-- **Conceptualization**:
-- **Operationalization**:
-- **Nominal level of data**:
-- **Ordinal level of data**:
-- **Interval level of data**:
-- **Ratio level of data**:
+- **Variable**: A characteristic that varies
+- **Constant**: A characteristic that is the same for the people or objects that are the topic of research
+- **Conceptualization**: The process used in choosing and clearly defining the variables
+- **Operationalization**: Refers to the method used measure the variable
+- **Nominal level of data**: Classifying observations into mutually exclusive categories with no order or rank.
+- **Ordinal level of data**: Classifying observations that are mutually exlusive and have an inherent order to them
+- **Interval level of data**: Classifying observations that are mutually exclusive, have an inherent order and have equal spacing between categories.
+- **Ratio level of data**: Classifying observations thare are mutual exclusive, have an inherent order, have equal spacing and reflect the absolute magnitude. 
 
 ### 1.2. On positivism
 
@@ -61,7 +63,15 @@ Your_response_here
 
 **Question**: Name and define the different parts of the ***structural perspective***. Be sure to cover the parts related practice and research.
 
-Your_response_here
+1. Defense of the client: Helping defend client against oppressive systems
+
+2. Collectivization: Connect the clients to support netwroks and reduce the sense of isolation and alienation.
+
+3. Materialization: Realizing that many problems are a result of material deprivation
+
+4. Increasing Client Power in the worker-client relationship: Increase the power of clients in the worker-client relationship by clear contracting, avoiding jargon, etc.
+
+5. Enhancing Client Power through personal change: Maximize the client's potential for personal change of thoughts and behaviors.
 
 ## 2. Questions about "The history of empiricism"
 
@@ -69,7 +79,7 @@ Your_response_here
 
 **Question**: According to the SFSJ authors, what is ***feminist empiricism***? And, what issues does it recognize as important to recognize and remedy? Be sure to discuss why it emphasizes the importance of critically reflecting on aspects of the ***context*** of empirical work.
 
-Your_response_here
+Feminist empiricism argues that traditional science can be improved by correcting its biases. Androcentrism is an issue it tries to remedy. It rejects the traditional ideas of regular practice of science.  
 
 ## 3. Questions About "The future of ethics and social justice" in TPC
 
@@ -77,13 +87,35 @@ Your_response_here
 
 **Question**: Name and define some of what you deem as the main different parts of the ***socially just ethic***. Be sure to discuss how it is different from other ethical approaches.
 
-Your_response_here
+- SJ ethics constantly re-orient collective actions that center groups who are most in need.
+- Reflexivity - Critical reflection
+- Centering the marginalized
 
-### 3.2. Why an SJ ethic?
+### 3.2. Defining critical issues
+
+**Question**: Briefly define each of the critical issues discussed: Cultural Imperialism, Marginalization, and Intersectional Oppression.
+
+**Cultural Imperialism**: Violence and theft of land, slavery, and extraction of resources. Also extends to erasing culture and language.
+
+**Marginalization**: Exlusion of certain groups from participation in society.
+
+**Intersectional Oppression**: Opression in all facets and interactions
+
+### 3.3. Defining the 3Ps to help us recognize oppression
+
+**Question**: Define each of the 3Ps below. Explain how each helps us recognize oppression.
+
+**Power**: Power is a structural problem that can be analyzed in a few ways. Structural power addresses how institutions are inter-connected and benefit from their capacity.
+
+**Privilege**: Builds on positionality. Focuses on what constraints and affordances people may have.
+
+**Positionality**: Positionality helps individuals and groups reflect on their identity in the context of structural issues of oppression.
+
+### 3.4. Why an SJ ethic?
 
 **Question**: Why do Lindgren, Gerdes, and Lawrence position a "SJ ethic" as essential to the future of TPC? What types of problems does it help TPC tackle?
 
-Your_response_here
+Equips you to tackle oppression and bias.
 
 ## 4. Questions About "Statistical Genre Analysis" (SGA)
 
@@ -91,26 +123,26 @@ Your_response_here
 
 **Question**: How do Graham et al define and discuss what constitutes "big" data? How does their definition differ from what you have heard before you read this article?
 
-Your_response_here
+Big data is more about a capacity to search, aggregate, and cross-reference large data sets. I thought it was more related to the sheer number/quantity of the data.
 
 ### 4.2. On SGA
 
 **Question**: Summarize the following parts of SGA:
 
-1. What TPC problems SGA addresses,
-2. What data they used to demonstrate its potential,
-3. What questions SGA data and methods enable TPC to ask, and
-4. What methods it uses to do so.
+1. Addresses the shortfalls of qualitative methods to analyze the vast and complex data.
+2. 5000 page subset
+3. How does the distrbution of stakeholders affect the distribution of votes? How does the distribution of stakeholders affect the forms of evidence and modes of reasoning used in the sponsor presentations?
+4. Statistical Analysis
 
-Your_response_here
+
 
 ## 5. "Science is a social endeavor."
 
 **Question**: Discuss what this statement means to you. Then, discuss any connections, confusion, and/or questions that you recognize with a SJ ethic and structural perspective?
 
-Your_response_here
+Science is constructed by people, not purely objectivity. SJ ethics focus on the power of social influence
 
-## 6. Translating the structural approach into TPC
+## 6. Translating the structural approach into TPC / Other Humanities Fields
 
 **Question**: After considering all of these texts -- their exigencies, propositions, and methods -- translate Mullaly's broader definition of the *structural approach* and Moreau's *practice methods* in social work into the domain of TPC or humanist domain of work by putting them into conversation with Lindgren, Gerdes, and Lawrence's SJ ethic and Graham et al's statistical genre analysis. In other words, begin to develop your own structural perspective and set of practices that translates Moreau's 5 practices. Finally, add one new practice approach specific to TPC/your domain.
 
@@ -119,5 +151,5 @@ Your_response_here
 ## Submission
 
 1. Create a **PR** (**pull request**) and use the provided content in the template to start it.
-2. Respond to your peers and comment on their work on at least one chapter..
+2. Respond to your peers and comment on their work on at least one chapter.
 3. Submit the PR link in Moodle, when you're ready.
