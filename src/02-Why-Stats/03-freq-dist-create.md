@@ -59,8 +59,8 @@ Again, we are going to continue working with the 2024 NC absentee voter CSV file
 2. Assign the data to a variable named `ncVotersAll`.
 3. Render it to the page in a separate codeblock.
 
-```javascript
-// FileAttachment() code here assigned to `ncVotersAll`
+```js
+const ncVotersAll = FileAttachment("./../data/nc-voters/nc_absentee_mail_2024.csv").csv({ typed: true})
 ```
 
 Output the data as an interactive array of objects below:
@@ -69,8 +69,7 @@ Output the data as an interactive array of objects below:
   Interactive output of full data set in <code>ncVotersAll</code>
 </p>
 
-```javascript
-// Convert to render on page
+```js
 ncVotersAll
 ```
 
@@ -138,7 +137,7 @@ Inputs.table(
   // The array of objects
   ncVotersAll,
   {
-    // enter each customizing property in this object
+    columns: ["race","gender"]
   }
 )
 ```
@@ -358,9 +357,11 @@ In this second video, I explain the code inside of the custom `oneLevelRollUpFla
 
 Ok, now that you have watched the above video about the `oneLevelRollUpFlatMap()` function. Import it from the `./utils/utils.js` file in the codeblock below.
 
-```javascript
+```js
 // Convert me and import oneLevelRollUpFlatMap()
-import {PUT_ANY_FUNCTIONS_IN_HERE, SEPARATE_MORE_THAN_ONE, WITH_COMMAS} from "enter/path/here.js"
+import {oneLevelRollUpFlatMap()} from "./utils/utils.js"
+
+
 
 ```
 

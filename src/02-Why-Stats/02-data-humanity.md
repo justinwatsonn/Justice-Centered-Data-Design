@@ -49,13 +49,24 @@ All PDF copies are available in our learning management system.
 
 **Question**: According to D'Ignazio and Klein, what principles concern data and "power"? Define and discuss each principle below. Be sure to note the important questions to ask about data and power.
 
-YOUR_RESPONSE_HERE
+1. Examine Power - Data feminism begins by analyzing how poer operates in the world
+2. Challenge Power - Data feminism commits to challenging unequal power structures and working toward justice?
+3. Elevate emotion and embodiment - Data feminism teaches us to value multiple forms of knowledge, including the knowledge that comes from people as living, feeling bodies in the world.
+4. Rethink binaries and hierarchies - Data feminism requires us to challenge the gender binary, along with other systems of counting and classification that perpetuate oppression.
+5. Embrace pluralism - Data feminism insists that the most complete knowledge comes from synthesizing multiple perspectives, with priority given to local, Indigenous, and experiential ways of knowing
+6. Consider context - Data feminisms asserts that data are not neutral or objective. They are the products of unequal social relations, and this context is essential for conducting accurate, ethical analysis.
+7. Make Labor Visibile - The work of data science, like all work in the world, is the work of many hands. Data feminism makes this labor visible so that it can be recognized and valued
+
+
+
+- Data Science for whom?
+- Data science with whose interests and goals in mind?
 
 ### 1.2 Data: Objective mirror, or not?
 
 **Question**: What do D'Ignazio and Klein mean by issues of "false binaries and hidden hierarchies" (p. 3)? Then, explain how principles 3, 5, 6 and 7 each approach such issues.
 
-YOUR_RESPONSE_HERE
+Binaries are often hiding hierarchies. The gender binary is an example, where men are on top. The principles approach the issues by rethinking the binaries and including everyone, focusing on equity.
 
 ## 2. Questions about Queer Data
 
@@ -63,33 +74,33 @@ YOUR_RESPONSE_HERE
 
 **Question**: Create a bulleted list of short excerpts and summary statements where Guyan defines "queer data" and "intersectional LGBTQ data" in the introduction. Be sure to accompany all excerpts and paraphrases with page number locations in the PDF.
 
-- "Short excerpt 1" (p. xx)
-- "Short paraphrase 1" (p. xx)
-- "Short excerpt 2" (p. xx)
-- "Short paraphrase 2" (p. xx)
+- "Queer data disruspts the binaries of male/female, heterosexual/homosexual and cis/trans" (p. 12)
+- Queer data directly takes on binaries and their associated hierarchies 
+- "Queer data exposes the decisions made about data, from collection to its use for action, to ensure that data about LGBTQ people is used to construct a social world that values and improves the lives of LGBTQ people" (p. 12)
+- 
 - ...
 
 **Question**: Based on your list above, write your own movie tagline, i.e., a short and entertaining one-liner that tries to capture one of the main aspects of "queer data", and another tagline about "intersectional LGBTQ data."
 
-YOUR_TAGLINE_HERE
+Queer data exposes the binary world we live in 
 
 ### 2.2 Guyan's exigence for the book
 
 **Question**: Why did Guyan write this book? What was his exigence?
 
-YOUR_RESPONSE_HERE
+A small number of campaign groups weaponized gender, sex, and sexuality data in an attempt to infringe on LGBTQ rights. Additionally, a lack of data literacy encouraged Guyan to write. 
 
 ### 2.3 "Prescriptive" versus "descriptive"
 
 **Question**: What does Guyan mean when he labels terms like gender, sex, and sexuality as being descriptive—*not* prescriptive (see pp. 13-14 in particular)? Explain the differences between the two with an example from each of the terms.
 
-YOUR_RESPONSE_HERE
+A descriptive approach acknowledges that identity is personal and nuanced. A prescriptive approach is a more rigid way that forces people to fit in to things. 
 
 ### 2.4 "'Visibility is a trap'"
 
 **Question**: Guyan cites Foucault's idea about how "'visibility is a trap'" (p. 20 of the PDF). What does this expression mean, and why does Guyan draw parallels between Foucault's original use of it with issues of power and data? Be sure to illuminate your discussion with specific examples that Guyan uses in the book.
 
-YOUR_RESPONSE_HERE
+Visibility is a trap because sometimes it can be misconstrued as fully positive. This is problematic because with visibility comes the possibility of opening up marginalized groups to attacks and biases. It was mentioned that in Scotland there is tons of visiblity and data on LGBTQ people but hate crimes have only increased.
 
 ## 3. Questions about "The topology of race"
 
@@ -99,13 +110,13 @@ YOUR_RESPONSE_HERE
 
 **Question**: Why does Lee think it important that Appiah changed the standard line of inquiry in legal studies from "whether racism exists" (p. 441) to "what race and racism are"? What "overdetermined" (p. 441) parts or race, i.e., issues about race, does this definitional question bring into focus for deliberation? Be sure to ***define*** and discuss Appiah's position about race as being essential/biological or not and being cultural or not. Indeed, pay close attention to Appiah's definition of culture.
 
-YOUR_RESPONSE_HERE
+Lee thinks it is important because it breaks the regular discourse of race. Appiah addresses the fundamental concepts surrounding race instead of focusing on numbers and statistics. Appiah believes that race is not biological or essential. He advocates for race to be replaced by culture. 
 
 ### 3.2 Race as multiplicitous
 
 **Question**: What does Lee mean by "race is always multiplicitous because social contexts are multiplicitous" (p. 447)? Use the Shaw v. Reno case to help you explain how this challenges both essentialist/biological definitions of race & Appiah's race as synonomous with culture.
 
-YOUR_RESPONSE_HERE
+Race doesn't have a fixed meaning. Its meaning is created by the social context in which it takes place in. Race's meaning is a fluid concept that is constantly being transformed by the context that surrounds it. 
 
 ## 4. Questions about a data team's "rhetorical process of data"
 
@@ -113,25 +124,26 @@ YOUR_RESPONSE_HERE
 
 **Question**: Briefly describe the "god trick" problem. Also, discuss what connections you recognize between the "god trick" problem and some issues raised in our other readings.
 
-YOUR_RESPONSE_HERE
+The belief that the scientific process, which collects and analyzes data, are neturally objective and transcend the constraints of our situated, meterial realities of interpretation and communication. I recognize a connection between the construct of race and science. These concepts are almost believed to be perfect and wholly objective but are not. 
 
 ### 4.2 What's stasis and stasis networks?
 
 **Question**: Briefly define stasis and stasis networks. Explain what stasis networks provides qualitative researchers?
 
-YOUR_RESPONSE_HERE
+Statis is a procedure designed to guide peoples' deliberation toward consensus about an issue thorugh a sequence of guiding questions called stases; questions of fact, definition, cause, quality, and action. They provide a tool to identify and understand the rhetorical moves data professionals make by tracing relationships.
 
 ### 4.3 What's the "DMT cluster"?
 
 **Question**: What's the *DMT cluster*, and how did connect to observations about the data team's judgment about the *quality of metrics*?
 
-YOUR_RESPONSE_HERE
+High degree of relationship between definitive, metrics, and translative nodes. Alignment, significance, and oddities.
 
 ## 5. Synthesis Response
 
 **Question**: Pick and choose any particular combination of concepts and heuristics from the readings in 2.1 and 2.3. Use these questions and ideas to discuss your understanding of the 2024 NC General Election mail-in ballot data. What questions and criticisms do you have about the dataset's categories, hieararchies, collection, etc.?
 
-YOUR_RESPONSE_HERE
+Going in I know that this dataset isn't necessarily a neutral collection of facts and statistics. It is a politically framed election tool that is shaped by constructs of race and gender. For example, it looks like the application only asks for "Male" or "Female" for the gender question. This is a prescriptive model which dictates what the voter "should" be.
+
 
 ## Submission
 
