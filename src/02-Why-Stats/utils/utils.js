@@ -222,7 +222,7 @@ export const sumUpWithReducerTests = (reducerFunctions, reducerProperties, data,
 
 /**
  * Write your 3-level grouping code below.
- *
+ 
  * IMPORTANT!
  * You can jump start your rollups and flatMap
  * function at three levels by:
@@ -234,4 +234,3 @@ export const sumUpWithReducerTests = (reducerFunctions, reducerProperties, data,
  * (4) Add 1 more nested .flatMap() to handle the
  *     third level.
 **/
-

@@ -4,8 +4,13 @@
 ```js
 import {utcParse,utcFormat} from "d3-time-format";
 // Import your custom modules here: getUniquePropListBy, oneLevelRollUpFlatMap, twoLevelRollUpFlatMap, threeLevelRollUpFlatMap, sumUpWithReducerTests
-import {getUniquePropListBy} from "./utils/utils.js";
-import {mapDateObject} from "./utils/utils.js"
+import {
+    getUniquePropListBy, 
+    mapDateObject, 
+    threeLevelRollUpFlatMap,
+    parseDate,
+    sumUpWithReducerTests
+} from "./utils/utils.js";
 ```
 
 ## Start Your GH Workflow
@@ -103,7 +108,7 @@ Let's attach and render the dataset CSV file called `nc_absentee_mail_2024_no_dr
 Let's assign the attached data to a constant variable called `ncVotersAll`.
 
 ```js
-const ncVotersAll = FileAttachment("../data/nc-voters/nc_absentee_mail_2024_no_dropped_dupes.csv").csv({typed: true})
+const ncVotersAll = FileAttachment("../data/nc-voters/nc_absentee_mail_2024.csv").csv({ typed: true})
 ```
 
 <p class="codeblock-caption">
@@ -224,7 +229,6 @@ Import the `mapDateObject` function in the `import` statement at the top of this
 </p>
 
 ```js
-
 
 const ncVotersAllUpdated = mapDateObject(ncVotersAll, "ballot_req_dt")
 ```
