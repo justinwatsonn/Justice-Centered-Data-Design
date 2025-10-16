@@ -26,7 +26,9 @@ src/policies.md
 # TOO BIG DATA
 nc_absentee_20241105.csv
 
+# Ignored Data
+src/data/archive-audit/all_results_combined.csv
+
 # Observable Template Example
 example-*
-src/data/nc-voters/nc_absentee_mail_2024_no_dropped_dupes.csv
 REVISIONS.md
