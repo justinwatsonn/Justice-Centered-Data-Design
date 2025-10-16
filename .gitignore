@@ -18,6 +18,9 @@ src/data/dear-governor
 src/data/city-data
 src/policies.md
 
+# Observable Template Example
+example-*
+REVISIONS.md
 
 # TOO BIG VIDS
 *.mov
@@ -28,7 +31,4 @@ nc_absentee_20241105.csv
 
 # Ignored Data
 src/data/archive-audit/all_results_combined.csv
-
-# Observable Template Example
-example-*
-REVISIONS.md
+src/data/hcr-letters/hcr-letters-substack.json
