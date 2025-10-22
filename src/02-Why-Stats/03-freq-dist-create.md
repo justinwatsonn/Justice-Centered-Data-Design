@@ -59,8 +59,10 @@ Again, we are going to continue working with the 2024 NC absentee voter CSV file
 2. Assign the data to a variable named `ncVotersAll`.
 3. Render it to the page in a separate codeblock.
 
-```javascript
+```js
 // FileAttachment() code here assigned to `ncVotersAll`
+const ncVotersAll = FileAttachment("../data/nc-voters/nc_absentee_mail_2024_no_dropped_dupes.csv").csv({typed: true});
+
 ```
 
 Output the data as an interactive array of objects below:
@@ -69,7 +71,7 @@ Output the data as an interactive array of objects below:
   Interactive output of full data set in <code>ncVotersAll</code>
 </p>
 
-```javascript
+```js
 // Convert to render on page
 ncVotersAll
 ```
