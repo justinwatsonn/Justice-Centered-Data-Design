@@ -946,8 +946,8 @@ nc24VotersRollUpPartyAndRace.get("DEM").get("F") // Yields 4149
 
 **Goal**: Take the `nc2024SampleVoters` data and do the following:
 
-1. Convert the `javascript` codeblocks to `js` codeblocks.
-2. Use the `.map()` method to iterate through the array of objects and create a new variable about the `ballot_rtn_status` and `race`.
+1. Convert the `javascript` codeblocks to `js` codeblocks. Check
+2. Use the `.map()` method to iterate through the array of objects and create a new variable about the `ballot_rtn_status` and `race`. 
 3. Inside of `.map()`, use an if condition to only return an object with noted two properties, **if the value of `ballot_rtn_status` does not equal `null`**.
 4. Add your new array of objects to the second `js` codeblock to render an interactive output.
 
@@ -955,12 +955,100 @@ nc24VotersRollUpPartyAndRace.get("DEM").get("F") // Yields 4149
   Be sure to write your code in a manner aligned with how I break down the process above.
 </p>
 
-```javascript
-// Your code goes here
+```js
+const nc2024SampleVoters = [
+ {
+    id_num: 452004,
+    county_desc: "WAKE",
+    race: "WHITE",
+    ethnicity: "NOT HISPANIC or NOT LATINO",
+    gender: "F",
+    age: 65,
+    voter_city: "RALEIGH",
+    voter_state: "NC",
+    voter_zip: 27614,
+    voter_party_code: "DEM",
+    precinct_desc: "PRECINCT 02-02",
+    ballot_req_dt: "1/10/24",
+    ballot_req_type: "MAIL",
+    ballot_request_party: "DEM",
+    ballot_rtn_dt: null,
+    ballot_rtn_status: "SPOILED-EV",
+    ballot_send_dt: "9/24/24",
+  },
+  {
+    id_num: 462107,
+    county_desc: "WAYNE",
+    race: "BLACK or AFRICAN AMERICAN",
+    ethnicity: "UNDESIGNATED",
+    gender: "F",
+    age: 53,
+    voter_city: "GOLDSBORO",
+    voter_state: "NC",
+    voter_zip: 27530,
+    voter_party_code: "DEM",
+    precinct_desc: 29,
+    ballot_req_type: "MAIL",
+    ballot_request_party: "DEM",
+    ballot_req_dt: "9/21/24",
+    ballot_send_dt: "9/24/24",
+    ballot_rtn_dt: null,
+    ballot_rtn_status: "SPOILED-EV"
+  },
+  {
+    id_num: 436436,
+    county_desc: "WAKE",
+    race: "ASIAN",
+    ethnicity: "UNDESIGNATED",
+    gender: "M",
+    age: 60,
+    voter_city: "CARY",
+    voter_state: "NC",
+    voter_zip: 27519,
+    voter_party_code: "UNA",
+    precinct_desc: "PRECINCT 20-15",
+    ballot_req_type: "MAIL",
+    ballot_request_party: "UNA",
+    ballot_req_dt: "8/7/24",
+    ballot_send_dt: "9/24/24",
+    ballot_rtn_dt: null,
+    ballot_rtn_status: null
+  },
+  {
+    id_num: 367818,
+    county_desc: "SURRY",
+    race: "WHITE",
+    ethnicity: "NOT HISPANIC or NOT LATINO",
+    gender: "F",
+    age: 81,
+    voter_city: "MOUNT AIRY",
+    voter_state: "NC",
+    voter_zip: 27030,
+    voter_party_code: "REP",
+    precinct_desc: "MT AIRY #9",
+    ballot_req_type: "MAIL",
+    ballot_request_party: "REP",
+    ballot_req_dt: "9/25/24",
+    ballot_send_dt: "9/26/24",
+    ballot_rtn_dt: null,
+    ballot_rtn_status: null
+
+  }
+]
+const returnedBallotsRace = nc2024SampleVoters.map(voter => {
+  if (voter.ballot_rtn_status !== null) {
+    return {
+      status: voter.ballot_rtn_status,
+      race: voter.race
+    }
+  }
+})
+
+
 ```
 
 ```javascript
-// Your new variable here
+returnedBallotsRace
 ```
 
 ### E2. Group NC Voters By the Ballot Sent Date as an InternMap()
@@ -976,12 +1064,19 @@ nc24VotersRollUpPartyAndRace.get("DEM").get("F") // Yields 4149
   Be sure to write your code in a manner aligned with how I break down the process above.
 </p>
 
-```javascript
-// Your code goes here
+```js
+import {utcParse,utcFormat} from "d3-time-format";
+const parseDateSlash = utcParse("%d/%m/%y")
+
+for(const voter of nc2024SampleVoters) {
+  voter.ballot_send_dt_obj = parsedateSlash(voter.ballot_send_dt)
+}
+
+const votersbySendDate = d3.group(nc2024SampleVoters, d => d.ballot_send_dt_obj)
 ```
 
-```javascript
-// Your grouped variable here
+```js
+votersbySendDate
 ```
 
 ### E3. Group NC Voters By Age Range as an InternMap()
@@ -1000,12 +1095,20 @@ nc24VotersRollUpPartyAndRace.get("DEM").get("F") // Yields 4149
   </ol>
 </div>
 
-```javascript
-// Your code goes here
+```js
+const nc2024SampleVoters_2 = [
+  { age: 25}, { age: 68}, { age: 20}, {age: 35 }, { age: 81} 
+]
+const votersbyAgeGroup = d3.group(nc2024SampleVoters_2, d => {
+  if (d.age < 30) return "18-29";
+  if (d.age < 45) return "30-44";
+  if (d.age < 65) return "45-64";
+  return "65+";
+})
 ```
 
-```javascript
-// Your grouped variable here
+```js
+votersByAgeGroup
 ```
 
 ### E4. Group NC Voters by Your Desired set of 2-3 Fields as an InternMap()
@@ -1014,16 +1117,28 @@ nc24VotersRollUpPartyAndRace.get("DEM").get("F") // Yields 4149
 
 First outline your procedure with steps below. Then, use the JS codeblock to perform your grouping as a D3.js `InternMap()`.
 
-1. Enter step 1
-2. Enter step 2
-3. ...
+1. Select Race and Voter Party Code
+2. Use d3
+3. Group by Race and Voter code using d =>
 
-```javascript
-// Your code goes here
+```js
+
+const nc2024SampleVoters_3 = [
+  { race: "WHITE", voter_party_code: "REP" },
+  { race: "ASIAN", voter_party_code: "UNA" },
+  { race: "WHITE", voter_party_code: "DEM" },
+  { race: "BLACK or AFRICAN AMERICAN", voter_party_code: "DEM" },
+  { race: "WHITE", voter_party_code: "REP" },
+];
+const votersbyRaceAndParty = d3.group(
+  nc2024SampleVoters_3,
+  d => d.race,
+  d => d.voter_party_code
+)
 ```
 
 ```javascript
-// Your grouped variable here
+votersbyRaceAndParty
 ```
 
 ### E5. Rollup NC Voters by Total Ballot Sent Date as an InternMap()
@@ -1032,16 +1147,37 @@ First outline your procedure with steps below. Then, use the JS codeblock to per
 
 First outline your procedure with steps below. Then, use the JS codeblock to perform your rollup as a D3.js `InternMap()`.
 
-1. Enter step 1
-2. Enter step 2
-3. ...
+1. Prepare Data
+2. Parse dates from the data
+3. Use d3 to group the data
+4. Use D.length to count the number of voters
+5. Use d.ballot_req_dt_obj to group the data by date
 
-```javascript
-// Your code goes here
+
+```js
+const nc2024SampleVoters_4 = [
+   { ballot_req_dt: "9/20/2024" },
+  { ballot_req_dt: "9/22/2024" },
+  { ballot_req_dt: "9/20/2024" },
+  { ballot_req_dt: "9/21/2024" },
+  { ballot_req_dt: "9/20/2024" },
+
+]
+const parseDate_4 = utcParse("%m/%d/%Y")
+
+for (const voter of nc2024SampleVoters_4) {
+  voter.ballot_req_dt_obj = parseDate_4(voter.ballot_req_dt)
+}
+
+const ballotRequestsPerDay = d3.rollup(
+  nc2024SampleVoters_4,
+  D => D.length,
+  d => d.ballot_req_dt_obj
+)
 ```
 
-```javascript
-// Your grouped variable here
+```js
+ballotRequestsPerDay
 ```
 
 ## Submission
