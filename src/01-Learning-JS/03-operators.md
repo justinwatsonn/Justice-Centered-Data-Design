@@ -215,8 +215,26 @@ First, go back to the last chapter and grab the suite of primitives that you cre
 4. Print them all to the console with `console.log()`.
 5. Check your work, as you go, by opening the browser console with the **Inspect Element** tool.
 
-```javascript
-// Write your code in here
+```js
+// Variables
+const movie = "Fantastic Four";
+let tickets = 2;
+let price = 15;
+let hasPopcorn = true;
+let snack = null;
+let coupon;
+const cart = {tickets, price};
+
+console.log("Variables:", {movie, tickets, price, hasPopcorn, snack, coupon, cart});
+
+// Operators
+tickets += 1;
+price *= 2;
+let tip = 5;
+tip -= 2;
+console.log("Assignment:", {tickets, price});
+
+
 ```
 
 ## Submission
